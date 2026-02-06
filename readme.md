@@ -8,7 +8,7 @@ The system classifies X-ray images into **Normal**, **Lung Opacity**, or **Viral
 ---
 
 ## 🚀 Live Demo
-👉 (Add Streamlit Cloud link here after deployment)
+👉 (https://lungaixray.streamlit.app/)
 
 ## 🚀 Key Features
 
