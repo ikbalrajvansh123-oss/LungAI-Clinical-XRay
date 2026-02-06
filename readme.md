@@ -53,16 +53,22 @@ https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 ## 🏗️ Project Structure
 
 ```text
-X_Ray_Project_DL/
+LungAI/
 │
-├── app.py                  # Streamlit application
-├── config.py               # Configuration (IMG_SIZE, DEVICE, etc.)
-├── requirements.txt        # Dependencies
+├── app.py                     # Streamlit main application
+├── config.py                  # Global configs (IMG_SIZE, DEVICE, paths)
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
 │
-├── model/
-│   └── best_model.pth      # Trained PyTorch model
+
 │
-├── src/
-│   └── model.py            # ResNet50 model definition
+├── models/                    # Trained models
+│   └── best_model.pth
 │
-└── README.md
+├── src/                       # Core DL / logic
+│   ├── dataset.py
+│   ├── model.py               # Model architecture (ResNet50)
+│   ├── evaluate.py            # Model Performance Check
+│   ├── train.py               # Training Model
+│                        # Streamlit theme & UI config
+
